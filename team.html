@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Amigos | CGC LANDRAN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+
+    <link rel="shortcut icon" href="images/Frame-9.png" type="image/x-icon">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;500;600;700;800;900&family=Pixelify+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+
+    <style>
+
+        body {
+            overflow-x: hidden;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- <section style="position: fixed;" id="background">
+        <img class="hm-top-left-corner" src="images/background/Ellipse-bg.png" alt="bg-circle">
+        <img class="hm-bottom-right-corner" src="images/background/Ellipse-bg.png" alt="bg-circle">
+    </section>    -->
+
+    
+
+    <section id="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </section>
+
+    <!-- <section id="sdsf-header">
+        <div class="container d-flex">
+            <div class="davv-logo">
+                <a target="_blank" href="">
+                    <img src="images/logos/DSF_LOGO_11.jpg" alt="">
+                </a>
+            </div>
+            <div class="univ-name d-flex">
+                <div class="unive-name-wrap d-flex">
+                    <h1 class="d-flex">
+                        <span>School of Data Science and Forecasting</span>
+                        <span>Devi Ahilya Vishwavidyalaya, Indore</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="sdsf-logo">
+                <a target="_blank" href="">
+                    <img src="images/logos/DSF_Web_Logo.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="navbar">
+        <a id="mlh-trust-badge" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white" target="_blank"><img src="images/mlh-trust-badge-2024-black 1.jpg" alt="Major League Hacking 2024 Hackathon Season" style="width:100%"></a>
+        <div class="container">
+            <div class="pd-cont">
+                <nav>
+                    <div class="nav-list">
+                        <a href="index.html">
+                            <p>home</p>
+                        </a>
+                    
+                        <a href="#contact">
+                            <p>contact us</p>
+                        </a>
+                    </div>
+                    <div class="nav-logo" id="logo-button d-flex">
+                        <img class="HackHive-logo" src="images/Frame-9.png" alt="HackHive Logo">
+                        <!-- <img src="images/nimbu mirchi.gif" alt="for positivity"> -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="theteam">
+        <section id="team">
+            <div class="container">
+                <div class="row-1 d-flex">
+                    <h2>
+                        Members and Designation
+                    </h2>
+                </div>
+                <div class="row-2 team-1 d-flex">
+                    <div class="in-row-2 d-flex">
+                        
+                        <div id="new-row" class="in-row-1 d-flex">
+                            <div class="team-card"> 
+                                <div class="team-card-cont d-flex">
+                                    <h1 class="designation">
+                                        <span style="font-size: 20px;">
+                                            President
+                                        </span>
+                                    </h1>
+                                    <div class="low-cont d-flex">
+                                        <img src="images/team/harshit_img.png" alt="team-organiser">
+                                        <div class="person-name d-flex">
+                                            <h1>
+                                                <span>Harshit</span>
+                                            </h1>
+                                            <div class="person-social">
+                                                <a target="_blank" href="https://www.linkedin.com/in/vinayakgavariya/">
+                                                    <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div id="new-row" class="in-row-1 d-flex">
+                                <div class="team-card"> 
+                                    <div class="team-card-cont d-flex">
+                                        <h1 class="designation">
+                                            <span style="font-size: 20px;">
+                                                Vice President
+                                            </span>
+                                        </h1>
+                                        <div class="low-cont d-flex">
+                                            <img src="images/team/yuvraj_img.png" alt="team-organiser">
+                                            <div class="person-name d-flex">
+                                                <h1>
+                                                    <span>Yuvraj</span>
+                                                </h1>
+                                                <div class="person-social">
+                                                    <a target="_blank" href="https://www.linkedin.com/in/vinayakgavariya/">
+                                                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <footer id="contact">
+        <div class="container">
+            <div class="pd-cont">
+                <div class="row-1 d-flex">
+                    <div class="col-1 d-flex">
+                        <div class="f-col-1-wrapper">
+                            <h1>
+                                <span>more info.</span>
+                            </h1>
+                            <div class="more-links d-flex">
+                                <a
+                                    href="https://docs.google.com/document/d/1het4GefH3Ky1QO8CKGUX0McWc5ZT_IPqK9QhkcMe1x4/edit?usp=drivesdk">
+                                    <p>code of conduct</p>
+                                </a>
+                                <a href="https://hackhive.notion.site/Code-of-Conduct-HackHive-de29bb5a85cb4a9db647df7d75f649f7?pvs=4">
+                                    <p>community guidelines</p>
+                                </a>
+                                
+                                <a href="https://forms.gle/qydHSrK3XY4n8Q3P8">
+                                    <p>call for sponsors</p>
+                                </a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 d-flex">
+                        <div class="f-col-2-wrapper">
+                            <img src="images/footer-img.png" alt="broken-bee-hive" style="opacity: 0%">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="f-col-3-wrapper">
+                            <h1>
+                                <span>contact.</span>
+                            </h1>
+                            <div class="contact-links">
+                                <a href="mailto:dswtechamigos@cgc.edu.in">
+                                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                    <p>dswtechamigos@cgc.edu.in</p>
+                                </a>
+                               
+                                <a href="https://maps.app.goo.gl/kdm5YVQiFkFwEPNJ7">
+                                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                                    <p>Chandigarh</p>
+                                </a>
+                            </div>
+                            <section id="socials">
+                                <div style="justify-content: flex-start;" class="cont d-flex">
+                                
+                                    <div class="instagram">
+                                        <a href="https://www.instagram.com/techhunterssss/">
+                                            <i class="fa-brands fa-instagram logo-i logo"></i>
+                                        </a>
+                                    </div>
+                                
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-2 d-flex">
+                    <h3>
+                        <span>© Tech Amigos, all rights reserved</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
